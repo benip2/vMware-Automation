@@ -6,7 +6,7 @@ $password = "Admin_password"
 Connect-VIServer -Server $server -Username $username -Password $password
 
 # Specify the OVF file path
-$ovfPath = "C:\Users\General1\Desktop\TEMPLATE.ovf"
+$ovfPath = "C:\Users\General\Desktop\TEMPLATE.ovf"
 
 # Datastore = name of datastore
 # Import the virtual machine from OVF
