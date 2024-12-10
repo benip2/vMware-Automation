@@ -23,7 +23,7 @@ while (-not $vmShutdownComplete) {
         $vmShutdownComplete = $true
     } else {
         Write-Host "waiting for VMs to shutdown.."
-        #Start-Sleep -Seconds 10
+        Start-Sleep -Seconds 5
         }
     }
 
