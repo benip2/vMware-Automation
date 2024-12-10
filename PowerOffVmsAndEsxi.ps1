@@ -11,7 +11,7 @@ $vmList = Get-VM
 foreach ($vm in $vmList) {
     if ($vm.PowerState -eq "PoweredOn") {
         Write-Host "Shutting down VM: $($vm.Name)"
-        Shutdown-VMGuest -VM $vm -Confirm:$false    #אם הוא לא מכבה את המכונה יש להשתמש בפקודה Stop-VM
+        Shutdown-VMGuest -VM $vm -Confirm:$false    #כיבוי המכונה
     }
 }
 
