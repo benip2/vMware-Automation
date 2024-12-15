@@ -64,7 +64,7 @@ foreach ($vm in $vms) {
     # Configure CPU sockets and cores per socket
     Set-VM -VM $newVM -NumCpu $vm.CPU -CoresPerSocket $vm.CoresPerSocket -Confirm:$false
 
-    # Add the required disk with specified provisioning type (20GB)
+    # Add the required disk with specified provisioning type 
     $diskProvision = if ($vm.StorageProvision -eq "Thin") { "Thin" } else { "Thick" }
     New-HardDisk -VM $newVM -CapacityGB $vm.DiskGB -Datastore $vm.Datastore -StorageFormat $diskProvision -Confirm:$false
 
